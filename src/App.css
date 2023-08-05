@@ -36,3 +36,138 @@
     transform: rotate(360deg);
   }
 }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.headerContainer{
+  /* display: flex; */
+  background-color: orange;
+  padding: 20px;
+  box-shadow: 0 4px 25px rgba(228, 112, 67, 0.67);
+}
+
+.headerContainer .title{
+  float: left;
+  color: white;
+  font-weight: 600;
+}
+.headerContainer .iconContainer{
+  /* float: center; */
+  display: inline-block;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.iconContainer svg{
+  margin: auto 20px auto 20px;
+  color: orange;
+}
+.title p{
+  margin-top: 5px;
+}
+
+
+/* searchBar */
+.searchContainer{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+}
+.searchContainer .searchBar {
+  height: 30px;
+  width: 100%;
+  /* margin: 10px; */
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  
+}
+.searchContainer .searchIconBox {
+  padding: 6px 4px 3px 8px;
+  background-color: white;
+  border-radius: 5px 0 0 5px;
+  
+}
+
+/* Home */
+
+.homeContainer{
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vw;
+}
+
+.homeContainer .title{
+  margin: 10px;
+  display: flex;
+
+}
+
+.homeContainer .listContainer .postCard img{
+  border-radius: 8px;
+  /* width: 350px; */
+  width: 420px;
+  height: 270px;
+
+}
+
+.homeContainer .listContainer .postCard{
+  /* width: 400px; */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  /* width: calc(33.33% - 16px); */
+  margin: 8px;
+}
+.homeContainer .listContainer .postCard .cardTitle{
+  text-align: left;
+  padding-left: 20px;
+}
+.homeContainer .listContainer .postCard .description{
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* height: 200px; */
+width: 250px;
+/* white-space: nowrap; */
+}
+.homeContainer .listContainer .postCard .descContainer{
+  display: flex;  
+justify-content: space-around;
+
+}
+.homeContainer .listContainer .postCard .descContainer button{
+  border: none;
+  outline: none;
+  background-color: orange;
+  border-radius: 5px;
+}
+.homeContainer .listContainer .postCard .descContainer button>svg{
+  width: 45px;
+  height: 40px;
+  color: white;
+}
+
+.listContainer{
+  padding: 10px;
+  /* display: flex; */
+}
+.cardGrid{
+
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+gap: 16px;
+justify-content: space-around;
+}
