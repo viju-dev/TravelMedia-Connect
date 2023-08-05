@@ -42,6 +42,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 /* Header */
@@ -132,6 +135,7 @@
 .homeContainer .listContainer .postCard .cardTitle{
   text-align: left;
   padding-left: 20px;
+  margin: 10px 0 15px 0;
 }
 .homeContainer .listContainer .postCard .description{
   display: -webkit-box;
