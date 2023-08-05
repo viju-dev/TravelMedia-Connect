@@ -171,3 +171,6 @@ grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 gap: 16px;
 justify-content: space-around;
 }
+.btn{
+  
+}
