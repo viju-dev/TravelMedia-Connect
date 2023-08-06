@@ -68,7 +68,7 @@
   border-radius: 20px;
 }
 
-.iconContainer svg{
+.headerContainer .iconContainer svg{
   margin: auto 20px auto 20px;
   color: orange;
 }
@@ -137,20 +137,55 @@
   padding-left: 20px;
   margin: 10px 0 15px 0;
 }
+.homeContainer .title .iconContainer{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px;
+  margin: 5px 10px 0 10px;
+  width: 25px;
+  background-color: white;
+  border-radius: 15px;
+  height: 25px;
+}
+.homeContainer .title svg {
+  display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 56px;
+background-color: white;
+
+}
+
+.homeContainer .listContainer .postCard .cardTitle h3{
+  overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
 .homeContainer .listContainer .postCard .description{
+  color: gray;
   display: -webkit-box;
   -webkit-line-clamp: 4; /* Number of lines to display */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   /* height: 200px; */
-width: 250px;
+width: 300px;
 /* white-space: nowrap; */
+text-align: left;
 }
 .homeContainer .listContainer .postCard .descContainer{
   display: flex;  
-justify-content: space-around;
-
+justify-content: space-between;
+padding: 0 5px 0 18px;
+}
+.homeContainer .listContainer .postCard .descContainer .btnContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .homeContainer .listContainer .postCard .descContainer button{
   border: none;
